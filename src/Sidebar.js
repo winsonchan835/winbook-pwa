@@ -6,21 +6,22 @@ import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import PeopleIcon from '@material-ui/icons/People';
 import FlagIcon from '@material-ui/icons/Flag';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
-
+import StarIcon from '@material-ui/icons/Star';
+import StoreIcon from '@material-ui/icons/Store';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 
 function Sidebar() {
-  const user = {}
   return (
     <div className='Sidebar'>
-      <SidebarRow src={user.photoURL} title={user.displayName} />
-      <SidebarRow icon={LocalHospitalIcon}
+      <SidebarRow src='https://image.flaticon.com/icons/png/128/3033/3033143.png' title='Winson' />
+      <SidebarRow Icon={LocalHospitalIcon}
       title='COVID-19 Information Center'/>
-      <SidebarRow icon={PeopleIcon} title='Friends'/>
-      <SidebarRow icon={FlagIcon} title='Pages'/>
-      <SidebarRow icon={SupervisedUserCircleIcon} title='Groups'/>
-      <SidebarRow title='Friends'/>
-      <SidebarRow title='Pages'/>
-      <SidebarRow title='Groups'/>
+      <SidebarRow Icon={PeopleIcon} title='Friends'/>
+      <SidebarRow Icon={StarIcon} title='Favorites'/>
+      <SidebarRow Icon={FlagIcon} title='Pages'/>
+      <SidebarRow Icon={SupervisedUserCircleIcon} title='Groups'/>
+      <SidebarRow Icon={StoreIcon} title='Marketplace'/>
+      <SidebarRow Icon={VideoLibraryIcon} title='Videos'/>
     </div>
   )
 }
